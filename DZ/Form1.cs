@@ -111,6 +111,10 @@ namespace DZ
             bool flag = false;
             for (int i = 0; i < entities.Count; i++)
             {
+                if (flag)
+                {
+                    break;
+                }
                 for (int j = 0; j < entities[i].List.Count; j++)
                 {
                     if (entities[i].List[j] is Organ)
@@ -146,6 +150,7 @@ namespace DZ
                         Shop temp = entities[i].List[j] as Shop;
                         if (temp.name == title)
                         {
+                            flag = true;
                             info_1.Text = temp.name;
                             info_2.Text = "Адрес - " + temp.address;
                             info_3.Text = "Время работы - " + temp.timeOfWork;
