@@ -186,7 +186,6 @@
             this.info_5.Name = "info_5";
             this.info_5.Size = new System.Drawing.Size(480, 79);
             this.info_5.TabIndex = 9;
-            this.info_5.Text = "5";
             this.info_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // info_4
@@ -198,7 +197,6 @@
             this.info_4.Name = "info_4";
             this.info_4.Size = new System.Drawing.Size(480, 79);
             this.info_4.TabIndex = 8;
-            this.info_4.Text = "4";
             this.info_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // info_3
@@ -210,7 +208,6 @@
             this.info_3.Name = "info_3";
             this.info_3.Size = new System.Drawing.Size(480, 79);
             this.info_3.TabIndex = 7;
-            this.info_3.Text = "3";
             this.info_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // info_1
@@ -222,7 +219,6 @@
             this.info_1.Name = "info_1";
             this.info_1.Size = new System.Drawing.Size(480, 79);
             this.info_1.TabIndex = 5;
-            this.info_1.Text = "1";
             this.info_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // info_2
@@ -234,7 +230,6 @@
             this.info_2.Name = "info_2";
             this.info_2.Size = new System.Drawing.Size(480, 79);
             this.info_2.TabIndex = 6;
-            this.info_2.Text = "2";
             this.info_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm

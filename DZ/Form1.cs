@@ -23,6 +23,12 @@ namespace DZ
         /// <param name="e"></param>
         private void BtnLoad_Click(object sender, EventArgs e)
         {
+            info_1.Text = string.Empty;
+            info_2.Text = string.Empty;
+            info_3.Text = string.Empty;
+            info_4.Text = string.Empty;
+            info_5.Text = string.Empty;
+            ListOfEntity.Nodes.Clear();
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "xml files (*.xml)|*.xml|json files (*.json)|*.json";
             if (open.ShowDialog() == DialogResult.Cancel)
@@ -64,6 +70,12 @@ namespace DZ
             {
                 return;
             }
+            info_1.Text = string.Empty;
+            info_2.Text = string.Empty;
+            info_3.Text = string.Empty;
+            info_4.Text = string.Empty;
+            info_5.Text = string.Empty;
+            ListOfEntity.Nodes.Clear();
             for (int i = 0; i < entities.Count; i++)
             {
                 TreeNode TN = new TreeNode(entities[i].title);
@@ -123,7 +135,7 @@ namespace DZ
                         {
                             flag = true;
                             info_1.Text = temp.mainPrice;
-                            info_2.Text = temp.priceOfTicket;
+                            info_2.Text = "Цена за билет - " + temp.priceOfTicket.ToString();
                             info_3.Text = "Шанс на выиграшь = " + temp.chance.ToString();
                             info_4.Text = "Тираж билета - " + temp.circulation.ToString();
                             info_5.Text = "Номер билета - " + temp.number.ToString();
